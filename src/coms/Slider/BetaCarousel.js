@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import Carousel from 'react-elastic-carousel'
 
 import e1 from './img/e1.jpg'
@@ -11,7 +10,7 @@ const BetaCarousel = () => {
 
 	return (
 		<section style={sectionStyle}>
-			<Carousel>
+			<Carousel style={{}}>
 				<img alt='' src={e1} />
 				<img alt='' src={e2} />
 				<img alt='' src={e3} />
@@ -26,7 +25,7 @@ const BetaCarousel = () => {
 
 export default BetaCarousel
 const sectionStyle = {
-	padding: '2rem 7%',
+	padding: '2rem 10%',
 	backgroundColor: '#434343',
 	borderRadius: '1rem'
 }

@@ -8,9 +8,9 @@ const TimePath = () => {
 			<Wrapper>
 				<TimelineContainer borderRight={true}>
 					<H3 align='left'>Skills</H3>
-					<Timeline>
+					<Timeline lineStyle={{padding: '1.5px'}}>
 						<TimelineEvent
-							icon={<i className='fab fa-html5'></i>}
+							icon={<i style={{'fontSize': '1.5rem'}} className='fab fa-html5'></i>}
 							title='John Doe sent a SMS'
 							createdAt='2016-09-12 10:06 PM'
 							contentStyle={contentStyle}
@@ -20,7 +20,7 @@ const TimePath = () => {
 							within a couple of hours.
 						</TimelineEvent>
 						<TimelineEvent
-							icon={<i className='fab fa-css3-alt'></i>}
+							icon={<i style={{'fontSize': '1.5rem'}} className='fab fa-css3-alt'></i>}
 							title='John Doe sent a SMS'
 							createdAt='2016-09-12 10:06 PM'
 							contentStyle={contentStyle}
@@ -30,7 +30,7 @@ const TimePath = () => {
 							Consider this a gentle reminder if you are on track already!
 						</TimelineEvent>
 						<TimelineEvent
-							icon={<i className='fab fa-js-square'></i>}
+							icon={<i style={{'fontSize': '1.5rem'}} className='fab fa-js-square'></i>}
 							title='John Doe sent a SMS'
 							createdAt='2016-09-12 10:06 PM'
 							contentStyle={contentStyle}
@@ -40,7 +40,9 @@ const TimePath = () => {
 							Consider this a gentle reminder if you are on track already!
 						</TimelineEvent>
 						<TimelineEvent
-							icon={<i className='fab fa-react'></i>}
+						// imp inline || imp sty
+							
+							icon={<i style={{'fontSize': '1.5rem'}} className='fab fa-react'></i>}
 							title='John Doe sent a SMS'
 							createdAt='2016-09-12 10:06 PM'
 							contentStyle={contentStyle}
@@ -54,9 +56,9 @@ const TimePath = () => {
 
 				<TimelineContainer borderRight={false}>
 					<H3 align='right'>Side Skills</H3>
-					<Timeline orientation='right'>
+					<Timeline orientation='right'  lineColor='black'>
 						<TimelineEvent
-							icon={<i className='material-icons md-18'>email</i>}
+							icon={<i style={{'fontSize': '1.5rem'}} className='fab fa-github'></i>}
 							// icon={<i className='fab fa-github'></i>}
 							title='John Doe sent a SMS'
 							createdAt='2016-09-12 10:06 PM'
@@ -67,7 +69,7 @@ const TimePath = () => {
 							within a couple of hours.
 						</TimelineEvent>
 						<TimelineEvent
-							icon={<i className='fas fa-laptop-code'></i>}
+							icon={<i style={{'fontSize': '1rem'}} className='fas fa-users-cog'></i>}
 							title='John Doe sent a SMS'
 							createdAt='2016-09-12 10:06 PM'
 							contentStyle={contentStyle}
@@ -97,7 +99,6 @@ const H3 = styled.h3`
 	margin: 8px;
 	text-align: ${props => (props.align === 'left' ? 'left' : 'right')};
 `
-
 const contentStyle = {
 	fontWeight: 'bold',
 	borderRadius: '8px',

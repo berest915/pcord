@@ -1,34 +1,30 @@
-import styled, {css}  from 'styled-components'
+import styled, { css } from 'styled-components'
 
 //! css sniplets
 const hoverBottom = css`
-	&:hover{
-		border-bottom: 2px solid black;}
+	&:hover {
+		border-bottom: 2px solid black;
+	}
 `
-//! Empty Div Spacing
-export const EmPadding = styled.div`
-	padding: 0.5rem;
-`
+
 //! Container
 export const Nav = styled.nav`
 	padding-top: 0.2rem;
-	display: grid;
-	grid-template-columns: 1fr 1.5fr 1fr;
-	/* grid-template-columns: 1.8fr 3fr 1.5fr; */
+	display: flex;
 	height: 50px;
 	max-height: 50px;
 `
-export const GridBox = styled.section`
+export const FlexItem = styled.section`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex: 1;
 `
 //! Left Section
 export const Img = styled.i`
 	font-size: 2rem;
-	margin-right: 1rem;
-	color: darkgray;
-	/* background: rgb(223, 221, 215); */
+	margin-right: 0.5rem;
+	color: gray;
 `
 export const Person = styled.p`
 	font-weight: bold;
@@ -42,6 +38,7 @@ export const MidLi = styled.li`
 	text-align: right;
 	color: gray;
 	${hoverBottom}
+	${props => props.marginRight && `margin-right: ${props.marginRight}`}
 `
 //! Right Section
 export const RightLi = styled.li`
@@ -58,3 +55,5 @@ export const Icon = styled.i`
 //! defaults
 const NavbarCss = {}
 export default NavbarCss
+
+

@@ -1,54 +1,43 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
-import { EmSpacing } from '../../AppGlobalCss'
 
-import { EmPadding, Nav, GridBox } from './NavbarCss'
+import { Nav, FlexItem } from './NavbarCss'
 import { Img, Person, MidLi, RightLi, Icon } from './NavbarCss'
 
 const Navbar = props => {
-	// const { theme } = props
-	
 	return (
-		// <Button  theme={theme}>
-		// 		Styled-Components
-		// 	</Button>
 		<Fragment>
 			<Nav className='display-grid'>
-				<GridBox>
+				<FlexItem>
 					<Link to='/'>
-						<Img
-							alt='logo'
-							className='fab fa-youtube'
-						/>
+						<Img alt='logo' className='fab fa-youtube' />
 					</Link>
 					<Person>San Leow</Person>
-				</GridBox>
+				</FlexItem>
 
-				<GridBox>
+				<FlexItem>
 					<Link to='/' style={noTextDecoration}>
-						<MidLi >Resume</MidLi>
+						<MidLi marginRight='2rem'>Resume</MidLi>
 					</Link>
-					<EmPadding></EmPadding>
 					<Link to='/' style={noTextDecoration}>
 						<MidLi>Contact</MidLi>
 					</Link>
-				</GridBox>
+				</FlexItem>
 
-				<GridBox>
+				<FlexItem>
 					<RightLi>
 						<Icon className='far fa-envelope-open'></Icon>Gmail
 					</RightLi>
 					<RightLi>
 						<Icon className='fas fa-moon'></Icon>Mode
 					</RightLi>
-				</GridBox>
+				</FlexItem>
 			</Nav>
-			<EmSpacing marginBottom='3rem'/>
 		</Fragment>
 	)
 }
 export default Navbar
 
 const noTextDecoration = {
-	textDecoration: 'none'
+	textDecoration: 'none',
 }

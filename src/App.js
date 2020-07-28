@@ -40,7 +40,7 @@ export default App
 const Main = () => { 
 	return (
 		<Fragment>
-			<EmSpacing marginBottom='6rem' />
+			<EmSpacing marginBottom='3rem' />
 			<BetaCarousel />
 			<EmSpacing marginBottom='6rem' />
 			<TimePath />
