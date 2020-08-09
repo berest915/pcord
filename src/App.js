@@ -4,8 +4,9 @@ import { EmSpacing } from './AppGlobalCss.js'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Navbar from './layouts/nav/Navbar'
-import Carousel from './coms/Slider/Carousel'
-import BetaCarousel from './coms/Slider/BetaCarousel'
+// import Carousel from './coms/Slider/Carousel'
+// import BetaCarousel from './coms/Slider/BetaCarousel'
+import Cardz from './coms/Cardz/Cardz'
 import TimePath from './coms/timepath/TimePath'
 import MainFooter from './layouts/footer/MainFooter'
 
@@ -41,7 +42,8 @@ const Main = () => {
 	return (
 		<Fragment>
 			<EmSpacing marginBottom='3rem' />
-			<BetaCarousel />
+			{/* <BetaCarousel /> */}
+			<Cardz/>
 			<EmSpacing marginBottom='6rem' />
 			<TimePath />
 			<EmSpacing marginBottom='6rem' />

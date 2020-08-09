@@ -6,7 +6,6 @@ const hoverBottom = css`
 		border-bottom: 2px solid black;
 	}
 `
-
 //! Container
 export const Nav = styled.nav`
 	padding-top: 0.2rem;

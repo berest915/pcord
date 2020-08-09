@@ -40,8 +40,6 @@ const TimePath = () => {
 							Consider this a gentle reminder if you are on track already!
 						</TimelineEvent>
 						<TimelineEvent
-						// imp inline || imp sty
-							
 							icon={<i style={{'fontSize': '1.5rem'}} className='fab fa-react'></i>}
 							title='John Doe sent a SMS'
 							createdAt='2016-09-12 10:06 PM'
@@ -59,7 +57,6 @@ const TimePath = () => {
 					<Timeline orientation='right'  lineColor='black'>
 						<TimelineEvent
 							icon={<i style={{'fontSize': '1.5rem'}} className='fab fa-github'></i>}
-							// icon={<i className='fab fa-github'></i>}
 							title='John Doe sent a SMS'
 							createdAt='2016-09-12 10:06 PM'
 							contentStyle={contentStyle}

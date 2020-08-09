@@ -1,12 +1,10 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { EmSpacing } from '../../AppGlobalCss'
-import logo1 from './img/logo1.png'
 const spanOne = {
-  flex: '1'
+  // flex: '1'
 }
 const spanTwo = {
-  flex: '1'
+  // flex: '1'
 }
 const p1 ={
   width: '50%',
@@ -23,11 +21,15 @@ const p3 ={
   fontSize: '1rem',
   color: 'orange'
 }
+const LeftCardH4 = {
+	
+}
 const MainFooter = () => {
 	return (
 		<FooterContainer bgColor={lightGray}>
 			<LeftCard bgColor={lightGray}>
 				<H4>Bits and Pieces</H4>
+				<h4 style={{LeftCardH4}}>Bits and Pieces</h4>
 				<P>The best of frontend development, articles, tutorials, and...</P>
 				<Btn>
 					Notified <i className='fas fa-chevron-down'></i>
